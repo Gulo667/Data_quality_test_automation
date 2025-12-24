@@ -1,0 +1,51 @@
+TEST PLAN
+Scope : Employee CSV Data
+Objective: Validate Structure, Quality, and Business rules
+Tools: Python, Pandas, Pytest
+
+TEST SUITE:
+1: Structural validation - schema validation
+2: Data quality validation - integrity checks
+3: Business rules validation - Domain validation
+
+
+1: Structural suite - schema validation:
+Test cases:
+- Does csv load ?
+- Are required columns present ?
+- Is salary numeric ? 
+
+2: Data quality suite - integrity checks:
+Test cases:
+- No missing names
+- Salary is positive 
+- ID is unique 
+
+3: Business-rule suite - Domain validation:
+Test cases:
+- Architects earn at least 90k 
+- No one earns below 50k 
+- Only known departments exist 
+
+
+Mapping between tests and Pytest:
+Test suite - test file
+test case - test function 
+assertion - assert (mtkiceba, damtkiceba (Georgian translation, don't mind me))
+test data - CSV 
+setup - fixture 
+
+Example:
+"Does every ID appear only once ?"
+    assert df["ID"].is_unique
+
+___________________-
+
+You must prove the file loads
+
+Only then check columns
+
+Only then check data
+
+Only then check business rules
+
