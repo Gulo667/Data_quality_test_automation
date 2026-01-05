@@ -13,3 +13,4 @@ df.columns - column names as a list
 df.index - gives us the range of csv file
 '''
 print(df.columns)
+print(df.head())
