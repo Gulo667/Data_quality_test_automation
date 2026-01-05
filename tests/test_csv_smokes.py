@@ -13,7 +13,7 @@ def test_employee_csv_loads_successfully():
         
     assert rows, "CSV file is empty or not loaded"
     
-#validate the CSV file has expected columns
+#validate the CSV file has expected columns:
 
 @pytest.mark.csv
 def test_employee_csv_has_required_colimns():
