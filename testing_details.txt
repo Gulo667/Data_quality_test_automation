@@ -12,14 +12,18 @@ TEST SUITE:
 1: Structural suite - schema validation:
 Test cases:
 - Does csv load ?
+- Does CSV has data in it ?
 - Are required columns present ?
 - Is salary numeric ? 
 
 2: Data quality suite - integrity checks:
 Test cases:
 - No missing names
+- Salary is numeric
 - Salary is positive 
-- ID is unique 
+- ID is unique
+- ID is integer
+
 
 3: Business-rule suite - Domain validation:
 Test cases:

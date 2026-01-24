@@ -11,6 +11,7 @@ df.info() - data types, memory usage, ect
 df.describe() - summary statistic for the numerical columns
 df.columns - column names as a list
 df.index - gives us the range of csv file
+df.empty - checks if df is empty
 '''
 print(df.columns)
 print(df.head())
