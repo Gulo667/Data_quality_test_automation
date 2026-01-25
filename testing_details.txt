@@ -18,7 +18,7 @@ Test cases:
 
 2: Data quality suite - integrity checks:
 Test cases:
-- No missing names
+- No Nulls
 - Salary is numeric
 - Salary is positive 
 - ID is unique
